@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Fnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Frist Number"
+        android:inputType="number"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/sgin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Fnumber"
+        android:hint="Enter Your Sgin "
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/SecondNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sgin"
+        android:hint="Enter Your Second Number"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SecondNumber"
+        android:layout_centerHorizontal="true"
+        android:text="calc" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn"
+        android:textColor="#000"
+        android:textSize="50sp" />
+</RelativeLayout>
